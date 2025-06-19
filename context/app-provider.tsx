@@ -1,7 +1,7 @@
 'use client'
 
-import { AuthProvider } from './auth-provider'
-import { QueryProvider } from './query-provider'
+import { AuthProvider } from '@context/auth-provider'
+import { QueryProvider } from '@context/query-provider'
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   return (

@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card'
-import { Button } from '../ui/button'
-import { Badge } from '../ui/badge'
-import { TourWithDetails } from '../../lib/types'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@components/ui/card'
+import { Button } from '@components/ui/button'
+import { Badge } from '@components/ui/badge'
+import { TourWithDetails } from '@lib/types'
 import { MapPin, Calendar, Eye, Trash2 } from 'lucide-react'
 import { format } from 'date-fns'
 

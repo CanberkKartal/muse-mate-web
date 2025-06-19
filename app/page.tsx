@@ -1,8 +1,8 @@
 'use client'
 
-import { useAuth } from '../context/auth-provider'
-import { Button } from '../components/ui/button'
-import { Card, CardDescription, CardHeader, CardTitle } from '../components/ui/card'
+import { useAuth } from '@context/auth-provider'
+import { Button } from '@components/ui/button'
+import { Card, CardDescription, CardHeader, CardTitle } from '@components/ui/card'
 import Link from 'next/link'
 import { Building, Map, Users } from 'lucide-react'
 

@@ -1,4 +1,4 @@
-import { Museum, Section } from './museum.types'
+import { Museum, Section } from '@lib/types/museum.types'
 
 export interface Tour {
   id: string

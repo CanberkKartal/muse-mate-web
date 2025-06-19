@@ -2,10 +2,10 @@
 
 import { useEffect, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useAuth } from '../../../../context/auth-provider'
-import { TourCreator } from '../../../../components/tour/tour-creator'
-import { Card, CardContent } from '../../../../components/ui/card'
-import { Button } from '../../../../components/ui/button'
+import { useAuth } from '@context/auth-provider'
+import { TourCreator } from '@components/tour/tour-creator'
+import { Card, CardContent } from '@components/ui/card'
+import { Button } from '@components/ui/button'
 import Link from 'next/link'
 
 function CreateTourContent() {

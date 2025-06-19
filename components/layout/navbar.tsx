@@ -1,8 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { useAuth } from '../../context/auth-provider'
-import { Button } from '../ui/button'
+import { useAuth } from '@context/auth-provider'
+import { Button } from '@components/ui/button'
 import { User, LogOut, Home, Map } from 'lucide-react'
 
 export function Navbar() {

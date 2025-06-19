@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { useAuth } from '../../../context/auth-provider'
-import { useTours, useDeleteTour } from '../../../lib/hooks/use-tours'
-import { TourCard } from '../../../components/tour/tour-card'
-import { Button } from '../../../components/ui/button'
-import { Card, CardContent } from '../../../components/ui/card'
-import { Input } from '../../../components/ui/input'
+import { useAuth } from '@context/auth-provider'
+import { useTours, useDeleteTour } from '@lib/hooks/use-tours'
+import { TourCard } from '@components/tour/tour-card'
+import { Button } from '@components/ui/button'
+import { Card, CardContent } from '@components/ui/card'
+import { Input } from '@components/ui/input'
 import Link from 'next/link'
 import { Plus, Search, Loader2 } from 'lucide-react'
 

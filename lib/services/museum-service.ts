@@ -1,4 +1,4 @@
-import { mockMuseums, mockSections, mockKeyObjects } from '../mock-data'
+import { mockMuseums, mockSections, mockKeyObjects } from '@lib/mock-data'
 import { 
   Museum, 
   MuseumDetails, 
@@ -6,7 +6,7 @@ import {
   KeyObject, 
   CreateMuseumDTO, 
   UpdateMuseumDTO 
-} from '../types'
+} from '@lib/types'
 
 // Static export compatibility - using mock data instead of Supabase
 

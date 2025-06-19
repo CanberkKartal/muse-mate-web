@@ -1,9 +1,9 @@
 'use client'
 
-import { useMuseums } from '../../../lib/hooks/use-museums'
-import { MuseumCard } from '../../../components/museum/museum-card'
-import { Card, CardContent } from '../../../components/ui/card'
-import { Input } from '../../../components/ui/input'
+import { useMuseums } from '@lib/hooks/use-museums'
+import { MuseumCard } from '@components/museum/museum-card'
+import { Card, CardContent } from '@components/ui/card'
+import { Input } from '@components/ui/input'
 import { useState } from 'react'
 import { Search, Loader2 } from 'lucide-react'
 

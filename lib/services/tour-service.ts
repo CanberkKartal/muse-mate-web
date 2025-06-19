@@ -1,11 +1,11 @@
-import { mockTours, mockMuseums } from '../mock-data'
+import { mockTours, mockMuseums } from '@lib/mock-data'
 import { 
   Tour, 
   TourWithDetails, 
   CreateTourDTO, 
   CreateTourWithSectionsDTO,
   UpdateTourDTO 
-} from '../types'
+} from '@lib/types'
 
 // Static export compatibility - using mock data instead of Supabase
 

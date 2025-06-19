@@ -86,60 +86,59 @@ The application implements a unidirectional data flow architecture across four d
 ### Project Structure Schema
 
 ```
-src/
-  app/                  # Next.js App Router implementation
-    (auth)/             # Authentication route group
-      login/            # Login page implementation
-      register/         # Registration page implementation
-      layout.tsx        # Auth-specific layout
-    (main)/             # Primary application route group
-      museums/          # Museum discovery and detail routes
-        [id]/           # Dynamic museum detail route
-        page.tsx        # Museum index page
-      tours/            # Tour management routes
-        [id]/           # Dynamic tour detail route
-        create/         # Tour creation workflow
-        page.tsx        # Tour index page
-      profile/          # User profile management
-        page.tsx        # Profile page implementation
-      layout.tsx        # Main application layout
-    api/                # API route handlers (when required)
-    layout.tsx          # Root layout with provider initialization
-    
-  components/           # Reusable UI components
-    ui/                 # shadcn/ui component library integration
-    museum/             # Museum-specific component implementations
-      museum-card.tsx   # Museum summary display component
-      section-list.tsx  # Section visualization component
-      key-object.tsx    # Key object presentation component
-    tour/               # Tour-specific component implementations
-      tour-creator.tsx  # Tour generation interface
-      section-selector.tsx # Section selection component
-      tour-card.tsx     # Tour summary display component
-    profile/            # Profile-specific component implementations
-    layout/             # Layout component implementations
-    
-  lib/                  # Core utilities and services
-    services/           # API and data access service layer
-      museum-service.ts # Museum data access implementation
-      tour-service.ts   # Tour management implementation
-      user-service.ts   # User data management implementation
-    utils/              # Utility function implementations
-      path-optimizer.ts # Tour path optimization algorithm
-      validation.ts     # Input validation utilities
-    hooks/              # Custom React hooks
-      use-museums.ts    # Museum data access hook
-      use-tours.ts      # Tour management hook
-      use-theme.ts      # Theme management hook
-    types/              # TypeScript type definitions
-      museum.types.ts   # Museum domain type definitions
-      tour.types.ts     # Tour domain type definitions
-      user.types.ts     # User domain type definitions
-  
-  context/              # Global state management
-    theme-provider.tsx  # Theme context provider implementation
-    auth-provider.tsx   # Authentication context provider
-    app-provider.tsx    # Application state management
+app/                  # Next.js App Router implementation
+  (auth)/             # Authentication route group
+    login/            # Login page implementation
+    register/         # Registration page implementation
+    layout.tsx        # Auth-specific layout
+  (main)/             # Primary application route group
+    museums/          # Museum discovery and detail routes
+      [id]/           # Dynamic museum detail route
+      page.tsx        # Museum index page
+    tours/            # Tour management routes
+      [id]/           # Dynamic tour detail route
+      create/         # Tour creation workflow
+      page.tsx        # Tour index page
+    profile/          # User profile management
+      page.tsx        # Profile page implementation
+    layout.tsx        # Main application layout
+  api/                # API route handlers (when required)
+  layout.tsx          # Root layout with provider initialization
+
+components/           # Reusable UI components
+  ui/                 # shadcn/ui component library integration
+  museum/             # Museum-specific component implementations
+    museum-card.tsx   # Museum summary display component
+    section-list.tsx  # Section visualization component
+    key-object.tsx    # Key object presentation component
+  tour/               # Tour-specific component implementations
+    tour-creator.tsx  # Tour generation interface
+    section-selector.tsx # Section selection component
+    tour-card.tsx     # Tour summary display component
+  profile/            # Profile-specific component implementations
+  layout/             # Layout component implementations
+
+lib/                  # Core utilities and services
+  services/           # API and data access service layer
+    museum-service.ts # Museum data access implementation
+    tour-service.ts   # Tour management implementation
+    user-service.ts   # User data management implementation
+  utils/              # Utility function implementations
+    path-optimizer.ts # Tour path optimization algorithm
+    validation.ts     # Input validation utilities
+  hooks/              # Custom React hooks
+    use-museums.ts    # Museum data access hook
+    use-tours.ts      # Tour management hook
+    use-theme.ts      # Theme management hook
+  types/              # TypeScript type definitions
+    museum.types.ts   # Museum domain type definitions
+    tour.types.ts     # Tour domain type definitions
+    user.types.ts     # User domain type definitions
+
+context/              # Global state management
+  theme-provider.tsx  # Theme context provider implementation
+  auth-provider.tsx   # Authentication context provider
+  app-provider.tsx    # Application state management
 ```
 
 ## Development Environment Configuration

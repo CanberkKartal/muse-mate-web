@@ -1,8 +1,8 @@
 'use client'
 
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { tourService } from '../services/tour-service'
-import { CreateTourWithSectionsDTO, TourWithDetails } from '../types'
+import { tourService } from '@lib/services/tour-service'
+import { CreateTourWithSectionsDTO, TourWithDetails } from '@lib/types'
 
 export function useTours(userId?: string) {
   return useQuery({

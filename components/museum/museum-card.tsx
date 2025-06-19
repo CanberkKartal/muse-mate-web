@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card'
-import { Button } from '../ui/button'
-import { Museum } from '../../lib/types'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@components/ui/card'
+import { Button } from '@components/ui/button'
+import { Museum } from '@lib/types'
 import { MapPin, ExternalLink } from 'lucide-react'
 
 interface MuseumCardProps {
