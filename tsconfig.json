@@ -23,9 +23,10 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "docs/*"
-      ]
+      "@app/*": ["./app/*"],
+      "@components/*": ["./components/*"],
+      "@context/*": ["./context/*"],
+      "@lib/*": ["./lib/*"]
     }
   },
   "include": [
